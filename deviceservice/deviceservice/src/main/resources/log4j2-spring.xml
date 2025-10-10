@@ -1,0 +1,31 @@
+<Configuration status="DEBUG">
+    <Appenders>
+        <SplunkHttp name="splunkhttp"
+                    url="https://localhost:8088/"
+                    token="<<splunk_token>>"
+                    index="<<index_name>>"
+                    source="spring-boot-logs"
+                    sourcetype="_json"
+                    messageFormat="json"
+                    disableCertificateValidation="true"
+                    ignoreExceptions="false">
+            <JsonLayout compact="true" eventEol="true" properties="true"/>
+        </SplunkHttp>
+
+        <Console name="console" target="SYSTEM_OUT">
+            <JsonLayout compact="true" eventEol="true" properties="true"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.example.deviceservice" level="INFO" additivity="false">
+            <AppenderRef ref="splunkhttp"/>
+            <AppenderRef ref="console"/>
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="splunkhttp"/>
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

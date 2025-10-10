@@ -1,0 +1,8 @@
+flask
+flask-cors
+pandas
+plotly
+mysql-connector-python
+transformers
+requests
+kaleido

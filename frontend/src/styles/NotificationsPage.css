@@ -1,0 +1,127 @@
+.notifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.notification-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+}
+
+.notification-card.acknowledged {
+  border-left: 6px solid #4caf50;
+  background: #f6fff8;
+}
+
+.notification-card.unacknowledged {
+  border-left: 6px solid #f44336;
+  background: #fff6f6;
+}
+
+.card-header {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ack-button {
+  background: #007bff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.ack-button:hover {
+  background: #0056b3;
+}
+
+.badge.success {
+  background: #4caf50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.filter-controls label {
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-controls select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-controls select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.pagination-controls button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 0.95rem;
+  color: #555;
+}

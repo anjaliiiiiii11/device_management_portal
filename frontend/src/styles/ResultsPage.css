@@ -1,0 +1,35 @@
+.results-bg {
+  background: #f7ecd9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.results-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 48px 32px;
+  min-width: 600px;
+  text-align: center;
+}
+.results-title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.results-table th, .results-table td {
+  border: 1px solid #eee;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+.results-table th {
+  background: #f7ecd9;
+  color: #333;
+}
