@@ -6,8 +6,7 @@ from difflib import SequenceMatcher
 from docx import Document
 
 # GROQ API credentials
-GROQ_API_KEY = "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"
-GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

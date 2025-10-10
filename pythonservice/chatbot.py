@@ -7,8 +7,7 @@ from transformers import pipeline
 # -----------------------------
 # CONFIG
 # -----------------------------
-# GROQ_API_KEY = "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"
-# GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+
 
 DB_CONFIG = {
     'host': 'localhost',
