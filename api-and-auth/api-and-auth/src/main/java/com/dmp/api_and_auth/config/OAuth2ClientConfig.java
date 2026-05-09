@@ -14,8 +14,8 @@ public class OAuth2ClientConfig {
     public ReactiveClientRegistrationRepository clientRegistrations() {
         ClientRegistration googleRegistration = CommonOAuth2Provider.GOOGLE
                 .getBuilder("google")
-                .clientId("<<clientID>>")
-                .clientSecret("<<client secret>>")
+                .clientId("")
+                .clientSecret("")
                 .redirectUri("http://localhost:8083/login/oauth2/code/google")
                 .scope("openid", "profile", "email")
                 .build();
