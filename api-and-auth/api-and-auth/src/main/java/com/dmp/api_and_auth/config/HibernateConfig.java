@@ -21,7 +21,7 @@ public class HibernateConfig {
         return DataSourceBuilder.create()
                 .url("jdbc:mysql://localhost:3306/userdb")
                 .username("root")
-                .password("<<mysqlpassword>>")
+                .password("")
                 .driverClassName("com.mysql.cj.jdbc.Driver")
                 .build();
     }
